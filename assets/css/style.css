@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Playfair Display', serif !important;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#top-navbar {
+  background-color: #fff;
+  z-index: 99;
+}
+
+.mt-8 {
+  margin-top: 5em;
+}
+
+.text-cyan {
+  color: #2CAEB8;
+}
+
+.brand {
+  font-size: 18px !important;
+  color: #333333
+}
+
+.nav-link {
+  color: #666666;
+  font-size: 16px;
+}
+
+.active {
+  margin: auto;
+  border-bottom: 2px solid #2CAEB8;
+}
+
+.jumbotron {
+  height: 720px;
+  background: linear-gradient(rgba(51, 51, 51, 0.5), rgba(24, 23, 23, 0.65)), url('./../images/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.95
+}
+
+.hero-text {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 75px;
+}
+
+.hero-button {
+  background-color: #2CAEB8 !important;
+  font-size: 18px !important;
+  color: white !important;
+  border-radius: 0 !important;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2CAEB8;
+  display: relative;
+}
+
+.section-title:before {
+  content: "";
+  display: absolute;
+  width: 75%;
+  border: 1px solid #2CAEB8;
+  font-size: 2em;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.about-us-heading {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 53px;
+  color: #364B4D;
+}
+
+.about-us-body {
+  font-size: 16px;
+  color: #666666;
+  line-height: 28px;
+}
+
+#services {
+  background-color: #F2FEFF;
+}
+
+.services-header-text {
+  font-weight: bold;
+  font-size: 40px;
+  color: #364B4D;
+}
+
+.card {
+  border-radius: unset;
+  ;
+  background-color: transparent !important;
+}
+
+.card-img-top {
+  border-radius: unset;
+}
+
+.card-text {
+  font-weight: 300;
+  font-size: 16px;
+  color: #666666;
+}
+
+.card-title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #364B4D;
+}
+
+.testimony {
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.client {
+  font-size: 16px;
+}
+
+#contact-us {
+  background-color: #F2FEFF;
+  ;
+  position: relative;
+}
+
+#contact-us>img {
+  opacity: 0.85;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+}
+
+.active-dot {
+  background-color: #2CAEB8;
+}
+
+.first-section {
+  height: 554px;
+}
+
+.second-section {
+  height: 400px;
+  background: linear-gradient(rgba(54, 75, 77, 0.7), rgba(54, 75, 77, 0.85)), url('./../images/contact-us.png');
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%)
+}
+
+form {
+  background-color: white;
+}
+
+form input, form textarea {
+  border-radius: 0 !important;
+}
+
+footer {
+  background-color: #364B4D;
+  color: white;
+}
+
+footer-text {
+  font-size: 16px;
+}
+
+
+@media(max-width:700px) {
+  
+.jumbotron {
+ background-position: center;
+}
+
+.hero-header.w-50{
+  text-align:center;
+  width:100% !important;
+}
+  .about-us-image{
+    width:346px;
+  }
+  #contact-us, .form {
+    position: unset;
+  }
+  .form {
+    transform: unset;
+    margin: auto;
+    top: 0%;
+  }
+  form{
+    padding:1em !important;
+    background-color:transparent;
+  }
+  form.p-5{
+    padding:1em !important;
+  }
+  form.w-50{
+  width:100% !important;
+  }
+  .second-section {
+    display: none;
+  }
+  .testimonial-image {
+    display: none;
+  }
+  .card{
+    margin-right:0!important;
+  }
+
+  .cards,.portfolio-wrapper{
+    padding:2em;
+  }
+.portfolio-wrapper img{
+  max-width:280px;
+}
+
+.slide{
+  text-align:center;
+  border:2px solid #2CAEB8;
+  padding:1.5em;
+}
+footer{
+  text-align:center;
+}
+}
