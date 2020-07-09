@@ -1,8 +1,14 @@
+@font-face{
+  font-family:airbnb;
+  src: url("./../font/AirbnbCerealLight.ttf");
+}
 * {
   box-sizing: border-box;
   margin: 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Playfair Display', serif !important;
 }
@@ -11,9 +17,12 @@ a {
   text-decoration: none;
   color: black;
 }
-
+p,form, .nav-link{
+  font-family: airbnb;
+}
 #top-navbar {
   background-color: #fff;
+  color:black;
   z-index: 99;
 }
 
@@ -26,13 +35,13 @@ a {
 }
 
 .brand {
-  font-size: 18px !important;
+  font-size: 22px !important;
   color: #333333
 }
 
 .nav-link {
   color: #666666;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .active {
@@ -41,7 +50,7 @@ a {
 }
 
 .jumbotron {
-  height: 720px;
+  height: 722px;
   background: linear-gradient(rgba(51, 51, 51, 0.5), rgba(24, 23, 23, 0.65)), url('./../images/hero.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,26 +66,27 @@ a {
 
 .hero-button {
   background-color: #2CAEB8 !important;
-  font-size: 18px !important;
+  font-size: 22px !important;
   color: white !important;
   border-radius: 0 !important;
 }
 
 .section-title {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
   color: #2CAEB8;
   display: relative;
 }
 
 .section-title:before {
   content: "";
-  display: absolute;
-  width: 75%;
-  border: 1px solid #2CAEB8;
-  font-size: 2em;
-  margin: 20px auto;
-  text-align: center;
+  display: inline-block;
+  height: 2px;
+  width: 10%;
+  position: relative;
+  vertical-align: middle;
+  background-color: #2CAEB8;
+
 }
 
 .about-us-heading {
@@ -87,7 +97,7 @@ a {
 }
 
 .about-us-body {
-  font-size: 16px;
+  font-size: 20px;
   color: #666666;
   line-height: 28px;
 }
@@ -114,7 +124,7 @@ a {
 
 .card-text {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 20px;
   color: #666666;
 }
 
@@ -125,13 +135,13 @@ a {
 }
 
 .testimony {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 24px;
   color: #333333;
 }
 
 .client {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 #contact-us {
@@ -189,22 +199,19 @@ footer {
 }
 
 footer-text {
-  font-size: 16px;
+  font-size: 20px;
 }
-
 
 @media(max-width:700px) {
-  
-.jumbotron {
- background-position: center;
-}
-
-.hero-header.w-50{
-  text-align:center;
-  width:100% !important;
-}
+  .jumbotron {
+    background-position: center;
+  }
   .about-us-image{
-    width:346px;
+    width:115%!important;
+  }
+  .hero-header.w-50 {
+    text-align: center;
+    width: 100% !important;
   }
   #contact-us, .form {
     position: unset;
@@ -214,15 +221,18 @@ footer-text {
     margin: auto;
     top: 0%;
   }
-  form{
-    padding:1em !important;
-    background-color:transparent;
+  form {
+    padding: 1em !important;
+    background-color: transparent;
   }
-  form.p-5{
-    padding:1em !important;
+  form.p-5 {
+    padding: 1em !important;
   }
-  form.w-50{
-  width:100% !important;
+  form.w-50 {
+    width: 100% !important;
+  }
+  .first-section {
+    height: 250px;
   }
   .second-section {
     display: none;
@@ -230,23 +240,21 @@ footer-text {
   .testimonial-image {
     display: none;
   }
-  .card{
-    margin-right:0!important;
+  .card {
+    margin-right: 0!important;
   }
-
-  .cards,.portfolio-wrapper{
-    padding:2em;
+  .cards, .portfolio-wrapper {
+    padding: 2em;
   }
-.portfolio-wrapper img{
-  max-width:280px;
-}
-
-.slide{
-  text-align:center;
-  border:2px solid #2CAEB8;
-  padding:1.5em;
-}
-footer{
-  text-align:center;
-}
+  .portfolio-wrapper img {
+    max-width: 280px;
+  }
+  .slide {
+    text-align: center;
+    border: 2px solid #2CAEB8;
+    padding: 1.5em;
+  }
+  footer {
+    text-align: center;
+  }
 }
