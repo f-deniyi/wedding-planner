@@ -47,8 +47,8 @@ p,form, .nav-link{
   border-bottom: 2px solid #2CAEB8;
 }
 
-.jumbotron {
-  height: 722px;
+.head {
+  height: 100vh;
   background: linear-gradient(rgba(51, 51, 51, 0.5), rgba(24, 23, 23, 0.65)), url('./../images/hero.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -202,15 +202,15 @@ footer-text {
 }
 
 @media(max-width:700px) {
-  .jumbotron {
+  .head {
     background-position: center;
-  }
-  .about-us-image{
-    width:115%!important;
   }
   .hero-header.w-50 {
     text-align: center;
     width: 100% !important;
+  }
+  .about-us-heading{
+    font-size:30px;
   }
   #contact-us, .form {
     position: unset;

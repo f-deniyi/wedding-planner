@@ -16,64 +16,63 @@
 
 <body>
   <!---Header-->
-  <header>
-    <nav id="top-navbar" class="navbar nav-fill  navbar-expand-lg navbar-light text-dark shadow fixed-top p-3">
-      <div class="container">
-        <a href="#hero" class="navbar-brand">
-          <h2 class='font-weight-bold brand'>PLAN <span class='text-cyan font-italic px-2'>&</span> PERFECTION</h2>
-        </a>
-        <button class="navbar-toggler  text-dark border-0" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active mb-2" href="#about-us"  >About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services" >Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio" >Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-us" >Contact Us</a>
-            </li>
-          </ul>
-        </div>
+  <nav id="top-navbar" class="navbar nav-fill  navbar-expand-lg navbar-light text-dark shadow fixed-top p-3">
+    <div class="container">
+      <a href="#hero" class="navbar-brand">
+        <h2 class='font-weight-bold brand'>PLAN <span class='text-cyan font-italic px-2'>&</span> PERFECTION</h2>
+      </a>
+      <button class="navbar-toggler  text-dark border-0" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active mb-2" href="#about-us">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+          </li>
+        </ul>
       </div>
-  
-    </nav>
-  </header>
+    </div>
 
-  <section id='hero' class='mt-8'>
-    <div class=' jumbotron jumbotron-fluid'>
-      <!-- <img class=''src='./assets/images/hero.png'> -->
-      <div class="container">
-        <div class="row align-items-center">
-          <div class='w-50  pt-5 hero-header'>
-            <h1 class="hero-text">
-              Let us make your Dream Wedding come true
-            </h1>
-            <div>
-              <button class="btn mt-3 hero-button br-0">Work with us</button>
-            </div>
+  </nav>
+
+  <header id="hero" class="head">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class=" hero-header w-50 ">
+          <h1 class="text-white hero-text ">
+            Let us make your Dream Wedding come true
+          </h1>
+          <div class="cta-container">
+            <button class=" btn hero-button cta-button">
+              Work with us
+            </button>
           </div>
         </div>
       </div>
-
     </div>
-  </section>
+  </header>
+
 
   <!---About us-->
   <section id="about-us" class='my-5'>
     <div class="container">
       <h2 class='section-title my-5'>ABOUT US</h2>
-      <div class="d-md-flex justify-content-between">
-        <div class="mr-5">
-          <img class=' about-us-image'src='./assets/images/about-us.png'>
+      <div class="row">
+        <div class="col-md-6">
+          <img class=' about-us-image img-fluid' src='./assets/images/about-us.png'>
         </div>
-        <div class="">
+        <div class="col-md-6">
           <div class="about-us-text">
             <h1 class='about-us-heading mb-4'>We plan every detail of your Wedding.</h1>
             <p class='about-us-body'> Wedding Planners help couples successfully plan their wedding day and see that
@@ -96,7 +95,7 @@
       <h2 class="services-header-text mt-3 mb-5 text-center">What we offer our Esteemed Clients</h2>
       <div class="cards d-md-flex justify-content-around pb-5">
         <div class='card mb-5 border-light mr-md-5'>
-          <img class=''class='card-img-top' src="./assets/images/services1.png" alt="services1">
+          <img class='' class='card-img-top' src="./assets/images/services1.png" alt="services1">
           <div class="card-body p-0">
             <h2 class="card-title text-center mt-3"> Wedding Planning <span class='font-italic'>&</span> budgeting</h2>
             <p class=card-text>Wedding Planners help couples succes- sfully plan their wedding day and see that
@@ -104,7 +103,7 @@
           </div>
         </div>
         <div class='card mb-5  border-light  mr-md-5'>
-          <img class=''class='card-img-top' src="./assets/images/services2.png" alt="services2">
+          <img class='' class='card-img-top' src="./assets/images/services2.png" alt="services2">
           <div class="card-body p-0">
             <h2 class="card-title text-center mt-3"> Event <span class='font-italic'>&</span> Guest coordination</h2>
             <p class=card-text>Wedding Planners help couples succes- sfully plan their wedding day and see that
@@ -112,7 +111,7 @@
           </div>
         </div>
         <div class='card mb-5 border-light mr-md-5'>
-          <img class=''class='card-img-top' src="./assets/images/services3.png" alt="services3">
+          <img class='' class='card-img-top' src="./assets/images/services3.png" alt="services3">
           <div class="card-body p-0">
             <h2 class="card-title text-center mt-3"> Venue Booking <span class='font-italic'>&</span> Decoration</h2>
             <p class=card-text>Wedding Planners help couples succes- sfully plan their wedding day and see that
@@ -124,7 +123,7 @@
   </section>
 
   <!--Portfolio-->
-  <section id='portfolio' class='my-5 py-5'>
+  <section id='portfolio' class='my-5 pt-5'>
     <div class=container>
       <div class='portfolio-wrapper'>
         <div class="d-md-flex justify-content-between">
@@ -134,27 +133,27 @@
             <button class="btn mt-3 hero-button ">View more</button>
           </div>
           <div class='mr-4'>
-            <img class=' mb-4'src="./assets/images/portfolio1.png" alt="portfolio1">
+            <img class=' mb-4' src="./assets/images/portfolio1.png" alt="portfolio1">
           </div>
           <div>
-            <img class=' mb-4'src="./assets/images/portfolio2.png" alt="portfolio1">
+            <img class=' mb-4' src="./assets/images/portfolio2.png" alt="portfolio1">
           </div>
         </div>
         <div class="d-md-flex  justify-content-center my-md-5">
           <div class=' mr-4'>
-            <img class=' mb-4'src="./assets/images/portfolio3.png" alt="portfolio1">
+            <img class=' mb-4' src="./assets/images/portfolio3.png" alt="portfolio1">
           </div>
           <div>
-            <img class=''src="./assets/images/portfolio4.png" alt="portfolio1">
+            <img class='' src="./assets/images/portfolio4.png" alt="portfolio1">
           </div>
         </div>
       </div>
-     
+
     </div>
   </section>
 
   <!--Testimonial-->
-  <section class='my-5 py-5'>
+  <section class='my-5 '>
     <div class="d-md-flex align-items-center">
       <div class="container pl-5">
         <div class="row">
@@ -168,7 +167,7 @@
               </p>
               <div class='d-flex align-items-center '>
                 <div>
-                  <img class=' w-md-75 mr-3'src="./assets/images/client.png" alt="testimonial" >
+                  <img class=' w-md-75 mr-3' src="./assets/images/client.png" alt="testimonial">
                 </div>
                 <div>
                   <p class='client'> Jean & Charles</p>
@@ -184,8 +183,8 @@
           </div>
         </div>
       </div>
-      <div  class='testimonial-image'>
-        <img class=''src="./assets/images/testimonial.png" alt="testimonial">
+      <div class='testimonial-image'>
+        <img class='' src="./assets/images/testimonial.png" alt="testimonial">
       </div>
     </div>
 
@@ -244,7 +243,6 @@
       </div>
   </footer>
   <!-- JS, Popper.js, and jQuery -->
-  <script src='./assets/script.js'></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
