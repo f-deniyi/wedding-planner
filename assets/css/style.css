@@ -43,9 +43,7 @@ p,form, .nav-link{
   color: #666666;
   font-size: 20px;
 }
-
-.active {
-  margin: auto;
+.nav-link.active{
   border-bottom: 2px solid #2CAEB8;
 }
 
@@ -86,6 +84,7 @@ p,form, .nav-link{
   position: relative;
   vertical-align: middle;
   background-color: #2CAEB8;
+  margin-right:0.8em;
 
 }
 
