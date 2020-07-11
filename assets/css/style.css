@@ -175,6 +175,9 @@ p,form, .nav-link{
 .second-section {
   height: 400px;
   background: linear-gradient(rgba(54, 75, 77, 0.7), rgba(54, 75, 77, 0.85)), url('./../images/contact-us.png');
+  background-repeat: no-repeat;
+  
+  background-size: cover;
 }
 
 .form {
